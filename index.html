@@ -3,20 +3,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Count</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <p>
-      <h2>Words</h2>
-      <div id="word-count"></div>
-    </p>
+    <div class="container">
+      <div class="count-container">
+        <span id="word-count" class="count">0</span>
+        <span>words</span>
+      </div>
 
-    <p>
-      <h2>Characters</h2>
-      <div id="char-count"></div>
-    </p>
+      <div class="count-container">
+        <span id="char-count" class="count">0</span>
+        <span>characters</span>
+      </div>
 
-    <textarea placeholder="Paste or type text"></textarea>
+      <textarea autofocus placeholder="Paste text or start typing"></textarea>
+    </div>
+
+    <footer>
+      <a id="source-url">View source</a>
+    </footer>
   </body>
 
   <script src="index.js"></script>
