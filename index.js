@@ -13,8 +13,8 @@ function handleInput (e) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const isBeaker = window.DatArchive ? true : false
-  const url = isBeaker
+  const isDat = window.DatArchive && window.location.origin.startsWith('dat:')
+  const url = isDat
     ? `beaker://library/${window.location}`
     : 'https://github.com/taravancil/count'
 
